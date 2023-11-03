@@ -1,0 +1,25 @@
+{
+  "name": "@wrensecurity/eslint-config",
+  "version": "0.0.0",
+  "description": "Wren Security shared ESLint configuration.",
+  "type": "module",
+  "exports": {
+    "default": "./src/default.js"
+  },
+  "files": [
+    "src/*"
+  ],
+  "scripts": {
+    "test": "ESLINT_USE_FLAT_CONFIG=true eslint -c src/default.js src/*.js",
+    "preversion": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:WrenSecurity/wrensec-eslint-config.git"
+  },
+  "author": "Wren Security <info@wrensecurity.org>",
+  "license": "CDDL-1.1",
+  "peerDependencies": {
+    "eslint": "^8.52.0"
+  }
+}
