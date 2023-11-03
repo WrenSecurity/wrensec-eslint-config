@@ -4,7 +4,8 @@
   "description": "Wren Security shared ESLint configuration.",
   "type": "module",
   "exports": {
-    "default": "./src/default.js"
+    "import": "./src/default.js",
+    "require": "./src/legacy.cjs"
   },
   "files": [
     "src/*"
