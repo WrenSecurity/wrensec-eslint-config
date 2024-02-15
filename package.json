@@ -4,8 +4,14 @@
   "description": "Wren Security shared ESLint configuration.",
   "type": "module",
   "exports": {
-    "import": "./src/default.js",
-    "require": "./src/legacy.cjs"
+    ".": {
+      "import": "./src/default.js",
+      "require": "./src/legacy.cjs"
+    },
+    "./react": {
+      "import": "./src/react.js",
+      "require": "./src/react.cjs"
+    }
   },
   "files": [
     "src/*"
@@ -21,6 +27,7 @@
   "author": "Wren Security <info@wrensecurity.org>",
   "license": "CDDL-1.1",
   "peerDependencies": {
-    "eslint": "^8.52.0"
+    "eslint": "^8.52.0",
+    "eslint-plugin-react": "^7.33.2"
   }
 }
