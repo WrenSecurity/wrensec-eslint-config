@@ -11,11 +11,11 @@
  * Header, with the fields enclosed by brackets [] replaced by your own identifying
  * information: "Portions copyright [year] [name of copyright owner]".
  *
- * Copyright 2023 Wren Security.
+ * Copyright 2023-2026 Wren Security.
  * Portions copyright 2017 ForgeRock AS (based on ISC licensed eslint-config-forgerock package).
  */
 
-/** @type {import("eslint/lib/shared/types").ConfigData} */
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
     rules: {
         "comma-dangle": "error",

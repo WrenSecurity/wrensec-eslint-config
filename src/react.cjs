@@ -11,15 +11,17 @@
  * Header, with the fields enclosed by brackets [] replaced by your own identifying
  * information: "Portions copyright [year] [name of copyright owner]".
  *
- * Copyright 2024 Wren Security.
+ * Copyright 2024-2026 Wren Security.
  * Portions copyright 2017 ForgeRock AS (based on ISC licensed eslint-config-forgerock package).
  */
 
-/** @type {import("eslint/lib/shared/types").ConfigData} */
+const reactPlugin = require('eslint-plugin-react');
+
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
-    plugins: [
-        "react"
-    ],
+    plugins: {
+        react: reactPlugin
+    },
     rules: {
         "react/jsx-boolean-value": "error",
         "react/jsx-closing-bracket-location": "error",
