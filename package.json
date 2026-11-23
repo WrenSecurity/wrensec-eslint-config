@@ -27,7 +27,15 @@
   "author": "Wren Security <info@wrensecurity.org>",
   "license": "CDDL-1.1",
   "peerDependencies": {
-    "eslint": "^9.39.4",
+    "eslint": "^9.39.4 || ^10.0.0",
     "eslint-plugin-react": "^7.37.5"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^10.15.0"
   }
 }
